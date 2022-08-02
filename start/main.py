@@ -1,7 +1,16 @@
-my_list =list(range(1,11));
-suma=0
+picture = [
+  [0,0,0,1,0,0,0],
+  [0,0,1,1,1,0,0],
+  [0,1,1,1,1,1,0],
+  [1,1,1,1,1,1,1],
+  [0,0,0,1,0,0,0],
+  [0,0,0,1,0,0,0]
+]
 
-for item in my_list:
-  suma+=item
-
-print(suma)
+for item in picture:
+  for pixel in item:
+    if (pixel==1):
+      print('*', end='')
+    else:
+      print(' ', end='')
+  print(' ')
