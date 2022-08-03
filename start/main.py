@@ -1,16 +1,8 @@
-picture = [
-  [0,0,0,1,0,0,0],
-  [0,0,1,1,1,0,0],
-  [0,1,1,1,1,1,0],
-  [1,1,1,1,1,1,1],
-  [0,0,0,1,0,0,0],
-  [0,0,0,1,0,0,0]
-]
+some_list=['a','b','c', 'b','d','m','n','n' ]
+#primero ordenamos
+sorted_list=sorted(some_list)
 
-for item in picture:
-  for pixel in item:
-    if (pixel==1):
-      print('*', end='')
-    else:
-      print(' ', end='')
-  print(' ')
+for i,letra in enumerate(sorted_list):
+  if letra == some_list[i+1]:
+    print(letra)
+  else: continue
