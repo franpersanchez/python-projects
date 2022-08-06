@@ -25,8 +25,13 @@ class Sally(Cat):
     def sing(self, sounds):
         return f'{sounds}'
 
-#1 Add nother Cat
 
+
+#1 Add nother Cat
+class Timote(Cat):
+  def sing(self, sounds):
+    return f'{sounds}' 
+    
 #2 Create a list of all of the pets (create 3 cat instances from the above)
 my_cats = []
 
